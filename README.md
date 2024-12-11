@@ -8,10 +8,10 @@ To learn more about Git, visit [about-github-and-git](https://docs.github.com/en
 ## **1. Setting Up Git**
 
 ### **1.1 Install Git**
-- **Windows**:  
+- **Installation in Windows**:  
    Download Git from [git-scm.com](https://git-scm.com/) and follow the installation steps.
-
-   #### **Check Git Version**
+  
+- **Check Git Version**:  
    - After installation, open **Command Prompt**, **PowerShell**, or **Git Bash**.
    - Type the following command to verify the installation and check the Git version:
      ```bash
