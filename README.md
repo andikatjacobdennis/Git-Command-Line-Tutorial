@@ -18,25 +18,68 @@ This tutorial covers practical Git usage, starting from the basics and advancing
 - Windows: Download from [git-scm.com](https://git-scm.com/) and install.
 
 ### **1.2 Configure Git**
-1. **Set Global Username and Email**
+
+When using Git for the first time, you need to configure some basic settings, such as your name, email, default text editor, and line endings. This ensures that Git can properly track your work and maintain consistency across different systems.
+
+#### **Settings:**
+- **Name**: The name associated with your commits.
+- **Email**: The email address associated with your commits.
+- **Default Editor**: The text editor used by Git for commit messages.
+- **Line Endings**: Ensures that line breaks are handled correctly across different operating systems.
+
+#### **Settings Levels:**
+Git allows you to specify these configurations at three different levels:
+- **System**: Applies to all users of the current computer.
+- **Global**: Applies to all repositories for the current user.
+- **Local**: Applies only to the current repository.
+
+By default, when using the `--global` flag, you apply the settings to the current user across all repositories.
+
+#### **Commands to Apply Settings**:
+To configure Git settings at the global level, you use the following commands in the terminal:
+
+1. **Set Global Username and Email**:
    ```bash
    git config --global user.name "John Doe"
    git config --global user.email "johndoe@example.com"
    ```
-   - These details are used in every commit as the author information.
+   - These details will appear in every commit as the author information.
 
-2. **Set a Default Text Editor to Visual Studio Code**
+2. **Set a Default Text Editor**:
    ```bash
    git config --global core.editor "code --wait"
    ```
-   - This sets Visual Studio Code as the default editor. The `--wait` flag ensures that Git will wait for you to close the editor before proceeding with the commit.
+   - This sets Visual Studio Code as the default editor. The `--wait` flag ensures that Git waits for you to close the editor before proceeding with the commit.
 
-3. **View Configuration**
+3. **View Global Configuration**:
    ```bash
    git config --list
    ```
-   - Lists all current global Git settings.
+   - This command lists all current global Git settings.
 
+4. **Edit Global Configuration**:
+   ```bash
+   git config --global --edit
+   ```
+   - This command opens the global Git configuration file in the default editor, allowing you to modify the settings directly.
+
+#### **End of Line Handling**:
+To ensure consistent line endings across different operating systems, configure the `core.autocrlf` setting:
+
+- **Windows**: Windows uses two special characters to mark the end of a line:
+  - Carriage Return: `\r`
+  - Line Feed: `\n`
+  
+  To automatically convert line endings when checking files in and out, use the following command:
+  ```bash
+  git config --global core.autocrlf true
+  ```
+
+- **macOS / Linux**: On macOS and Linux, line endings are marked with a single character (Line Feed: `\n`). To handle line endings correctly when working on these operating systems, use:
+  ```bash
+  git config --global core.autocrlf input
+  ```
+  
 ---
 
 ## **2. Creating and Managing Repositories**
