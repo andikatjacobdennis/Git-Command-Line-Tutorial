@@ -48,7 +48,7 @@ To configure Git settings at the global level, you use the following commands in
 
 Here’s the updated version, maintaining the same indentation:
 
-## 2. **Set a Default Text Editor**:
+2. **Set a Default Text Editor**:
    ```bash
    git config --global core.editor "code --wait"
    ```
