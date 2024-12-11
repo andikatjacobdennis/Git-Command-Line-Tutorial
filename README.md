@@ -198,10 +198,6 @@ Here are some basic commands for navigating and managing directories in the comm
 
 ---
 
-Here is your updated document with the section on renaming a feature branch added:
-
----
-
 ## **3. Branch Management**
 
 ### **Scenario 1: Create and Use Branches**
