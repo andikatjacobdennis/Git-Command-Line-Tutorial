@@ -57,7 +57,6 @@ Here’s the updated version, maintaining the same indentation:
    - **Troubleshooting**:
      - If another editor opens instead of VS Code, verify the configuration with `git config --global --get core.editor`.
      - Ensure that the `code` command is correctly installed and accessible in your terminal.
-     - Check for any environment variables like `GIT_EDITOR`, `VISUAL`, or `EDITOR` that may override this setting. You can unset them with `unset GIT_EDITOR`, `unset VISUAL`, and `unset EDITOR`.
 
 3. **View Global Configuration**:
    ```bash
