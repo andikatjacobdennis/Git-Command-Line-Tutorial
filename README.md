@@ -59,8 +59,6 @@ To configure Git settings at the global level, you use the following commands in
    ```
    - This command lists all current global Git settings.
 
-Here’s the updated version, maintaining the same indentation:
-
 4. **Edit Global Configuration**:
    ```bash
    git config --global --edit
