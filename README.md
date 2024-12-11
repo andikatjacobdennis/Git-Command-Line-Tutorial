@@ -19,7 +19,7 @@ Welcome to the Git Command-Line Tutorial, your comprehensive guide to mastering 
      ```
    - The output should display the installed version of Git, such as `git version 2.47.0.windows.1`.
 
-- **Install GitHub Desktop**:  
+- **Optional: Install GitHub Desktop**:  
    - GitHub Desktop is a GUI tool that simplifies Git workflows, making it easier to manage repositories visually.  
    - Download GitHub Desktop from [desktop.github.com](https://desktop.github.com/).  
    - Follow the installation steps and log in with your GitHub account.  
