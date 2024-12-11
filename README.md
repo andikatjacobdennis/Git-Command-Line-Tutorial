@@ -8,15 +8,16 @@ To learn more about Git, visit [about-github-and-git](https://docs.github.com/en
 ## **1. Setting Up Git**
 
 ### **1.1 Install Git**
-- macOS:
-  ```bash
-  brew install git
-  ```
-- Linux:
-  ```bash
-  sudo apt install git
-  ```
-- Windows: Download from [git-scm.com](https://git-scm.com/) and install.
+- **Windows**:  
+   Download Git from [git-scm.com](https://git-scm.com/) and follow the installation steps.
+
+   ### **Check Git Version**
+   - After installation, open **Command Prompt**, **PowerShell**, or **Git Bash**.
+   - Type the following command to verify the installation and check the Git version:
+     ```bash
+     git --version
+     ```
+   - The output should display the installed version of Git, such as `git version 2.x.x`.
 
 ### **1.2 Configure Git**
 
