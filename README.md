@@ -83,6 +83,50 @@ To ensure consistent line endings across different operating systems, configure 
 
 To get help about git command we can type a command followed by the --help flag. For example git config --help will give us the help topics about the config command. Press space to go to the next page and esc to exit.
 If we use the flag -h we will get a shorter summary of the help topics.
+
+### **1.2 Command Line Basics**
+
+Here are some basic commands for navigating and managing directories in the command line:
+
+- **`dir`**  
+  Lists the contents of the current directory (Windows command).  
+  **Example**:  
+  ```bash
+  dir
+  ```
+
+- **`cd`**  
+  Changes the current directory.  
+  **Example**:  
+  ```bash
+  cd <foldername>
+  ```
+
+- **`cls`**  
+  Clears the terminal screen (Windows command).  
+  **Example**:  
+  ```bash
+  cls
+  ```
+
+- **`cd ..`**  
+  Moves up one directory level.  
+  **Example**:  
+  ```bash
+  cd ..
+  ```
+
+- **`mkdir <foldername>`**  
+  Creates a new directory with the specified name.  
+  **Example**:  
+  ```bash
+  mkdir new_folder
+  ```
+
+- **`tab`**  
+  Auto-completes the current command or directory name when you press the "Tab" key (works for files and directories). This helps save time and avoid typos.  
+  **Example**:  
+  If you're typing a folder name and press "Tab," it will auto-complete the name if there's a match. If there are multiple matches, pressing "Tab" twice will list all options.
   
 ---
 
