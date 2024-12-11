@@ -109,11 +109,11 @@ Here are some basic commands for navigating and managing directories in the comm
   cls
   ```
 
-- **`cd ..`**  
+- **`cd..`**  
   Moves up one directory level.  
   **Example**:  
   ```bash
-  cd ..
+  cd..
   ```
 
 - **`mkdir <foldername>`**  
