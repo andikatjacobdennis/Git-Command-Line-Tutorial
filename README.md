@@ -1,7 +1,6 @@
 # Git Command-Line Tutorial
 
 This guide provides a hands-on approach to using Git, starting with the fundamentals and progressing to more advanced, real-world examples.  
-To learn more about Git, visit [about-github-and-git](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git).
 
 ---
 
