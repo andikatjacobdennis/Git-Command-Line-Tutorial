@@ -1,6 +1,6 @@
 # Git Command-Line Tutorial
 
-This tutorial covers practical Git usage, starting from the basics and advancing to real-world scenarios. Each command includes example usage with all necessary parameters and detailed explanations.
+This tutorial covers practical Git usage, starting from the basics and advancing to real-world scenarios. 
 
 ---
 
