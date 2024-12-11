@@ -1,9 +1,5 @@
 # Git Command-Line Tutorial
 
-This guide provides a hands-on approach to using Git, starting with the fundamentals and progressing to more advanced, real-world examples.  
-
----
-
 ## **1. Setting Up Git**
 
 ### **1.1 Install Git**
