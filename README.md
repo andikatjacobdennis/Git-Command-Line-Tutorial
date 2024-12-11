@@ -17,8 +17,6 @@ This tutorial covers practical Git usage, starting from the basics and advancing
   ```
 - Windows: Download from [git-scm.com](https://git-scm.com/) and install.
 
-To set Visual Studio Code as the default Git editor, you can replace `nano` with `code --wait` in the configuration command. Here's the updated step for configuring Git with Visual Studio Code as the default text editor:
-
 ### **1.2 Configure Git**
 1. **Set Global Username and Email**
    ```bash
