@@ -1,6 +1,7 @@
 # Git Command-Line Tutorial
 
-This tutorial covers practical Git usage, starting from the basics and advancing to real-world scenarios. 
+This tutorial covers practical Git usage, starting from the basics and advancing to real-world scenarios.
+To know more about git click here [about-github-and-git](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git)
 
 ---
 
