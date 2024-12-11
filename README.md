@@ -2,12 +2,15 @@
 
 Welcome to the Git Command-Line Tutorial, your comprehensive guide to mastering Git—the most popular version control system used by developers worldwide. Whether you're a beginner looking to get started or an experienced developer aiming to refine your skills, this tutorial will help you understand and effectively use Git commands through the terminal.
 
+---
+
 ## **1. Setting Up Git**
 
 ### **1.1 Install Git**
-- **Installation in Windows**:  
+
+- **Installation on Windows**:  
    Download Git from [git-scm.com](https://git-scm.com/) and follow the installation steps.
-  
+
 - **Check Git Version**:  
    - After installation, open **Command Prompt**, **PowerShell**, or **Git Bash**.
    - Type the following command to verify the installation and check the Git version:
@@ -15,6 +18,14 @@ Welcome to the Git Command-Line Tutorial, your comprehensive guide to mastering 
      git --version
      ```
    - The output should display the installed version of Git, such as `git version 2.47.0.windows.1`.
+
+- **Install GitHub Desktop**:  
+   - GitHub Desktop is a GUI tool that simplifies Git workflows, making it easier to manage repositories visually.  
+   - Download GitHub Desktop from [desktop.github.com](https://desktop.github.com/).  
+   - Follow the installation steps and log in with your GitHub account.  
+   - You can use GitHub Desktop alongside Git command-line tools for a more flexible workflow.
+
+--- 
 
 ### **1.2 Configure Git**
 
