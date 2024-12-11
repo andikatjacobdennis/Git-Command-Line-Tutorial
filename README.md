@@ -90,6 +90,10 @@ This tutorial covers practical Git usage, starting from the basics and advancing
 
 ---
 
+Here is your updated document with the section on renaming a feature branch added:
+
+---
+
 ## **3. Branch Management**
 
 ### **Scenario 1: Create and Use Branches**
@@ -128,7 +132,44 @@ This tutorial covers practical Git usage, starting from the basics and advancing
 
 ---
 
-### **Scenario 2: Rebase Branches**
+### **Scenario 2: Rename a Feature Branch**
+
+1. **Rename the Current Branch**
+   If you are on the branch you want to rename, use:
+   ```bash
+   git branch -m <new-branch-name>
+   ```
+   - `git branch -m <new-branch-name>`: Renames the current branch to `<new-branch-name>`.
+
+2. **Push the Renamed Branch to Remote**
+   ```bash
+   git push origin -u <new-branch-name>
+   ```
+   - `git push origin -u <new-branch-name>`: Pushes the renamed branch to the remote and sets it to track the remote branch.
+
+3. **Delete the Old Branch from Remote** (optional)
+   ```bash
+   git push origin --delete <old-branch-name>
+   ```
+   - `git push origin --delete <old-branch-name>`: Deletes the old branch from the remote repository.
+
+4. **Rename a Branch Not Currently Checked Out**
+   If you're not currently on the branch you want to rename, use:
+   ```bash
+   git branch -m <old-branch-name> <new-branch-name>
+   ```
+   - `git branch -m <old-branch-name> <new-branch-name>`: Renames the branch from `<old-branch-name>` to `<new-branch-name>`.
+
+5. **Update Your Local References**
+   If necessary, update your local tracking references:
+   ```bash
+   git fetch --all
+   ```
+   - `git fetch --all`: Fetches the latest information from the remote repository.
+
+---
+
+### **Scenario 3: Rebase Branches**
 
 1. **Rebase Feature Branch onto Main**
    ```bash
