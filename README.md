@@ -96,11 +96,11 @@ Here are some basic commands for navigating and managing directories in the comm
   dir
   ```
 
-- **`cd`**  
+- **`cd <foldername>`**  
   Changes the current directory.  
   **Example**:  
   ```bash
-  cd <foldername>
+  cd folder_name
   ```
 
 - **`cls`**  
