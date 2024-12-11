@@ -59,13 +59,15 @@ To configure Git settings at the global level, you use the following commands in
    ```
    - This command lists all current global Git settings.
 
-### 4. **Edit Global Configuration**:
+Here’s the updated version, maintaining the same indentation:
+
+4. **Edit Global Configuration**:
    ```bash
    git config --global --edit
    ```
    - This command opens the global Git configuration file in the default text editor, allowing you to modify the settings directly.
    
-   ### **Using the Editor**:
+   **Using the Editor**:
    - **Vim**:
      - Navigate using the arrow keys.
      - Press `i` to enter insert mode and make your changes.
