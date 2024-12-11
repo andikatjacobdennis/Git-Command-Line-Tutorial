@@ -59,11 +59,25 @@ To configure Git settings at the global level, you use the following commands in
    ```
    - This command lists all current global Git settings.
 
-4. **Edit Global Configuration**:
+### 4. **Edit Global Configuration**:
    ```bash
    git config --global --edit
    ```
-   - This command opens the global Git configuration file in the default editor, allowing you to modify the settings directly.
+   - This command opens the global Git configuration file in the default text editor, allowing you to modify the settings directly.
+   
+   ### **Using the Editor**:
+   - **Vim**:
+     - Navigate using the arrow keys.
+     - Press `i` to enter insert mode and make your changes.
+     - To save and exit, press `Esc`, then type `:wq` and press **Enter**.
+   
+   - **Nano**:
+     - Navigate using the arrow keys and edit directly.
+     - To save the file, press `Ctrl + O`, then press **Enter**.
+     - To exit, press `Ctrl + X`.
+   
+   - **GUI Editors** (e.g., VS Code):
+     - The file opens in your default graphical editor, where you can make changes and save the file normally.
 
 #### **End of Line Handling**:
 To ensure consistent line endings across different operating systems, configure the `core.autocrlf` setting:
