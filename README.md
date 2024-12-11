@@ -16,7 +16,7 @@ This guide provides a hands-on approach to using Git, starting with the fundamen
      ```bash
      git --version
      ```
-   - The output should display the installed version of Git, such as `git version 2.x.x`.
+   - The output should display the installed version of Git, such as `git version 2.47.0.windows.1`.
 
 ### **1.2 Configure Git**
 
