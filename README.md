@@ -50,7 +50,7 @@ To configure Git settings at the global level, you use the following commands in
    git config --global core.editor "code --wait"
    ```
    - This sets Visual Studio Code as the default editor. The `--wait` flag ensures that Git waits for you to close the editor before proceeding with the commit.
-   - FOr other editors refer this link [associating-text-editors-with-git](https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git)
+   - For other editors refer this link [associating-text-editors-with-git](https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git)
 
 3. **View Global Configuration**:
    ```bash
