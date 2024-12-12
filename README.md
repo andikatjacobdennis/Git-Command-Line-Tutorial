@@ -282,6 +282,126 @@ If you accidentally added files to the staging area using `git add`, you can uns
    ```
    - Confirms the files are no longer in the staging area but still show as modified or untracked.
 
+### **Scenario 5: Managing Staged and Unstaged Changes**
+
+In this scenario, you will manage staged and unstaged changes, including how to stage specific files, unstage changes, commit files, and discard unwanted changes. Additionally, you’ll learn the difference between `git add -u` and `git add -A`.
+
+---
+
+#### **1. Stage Specific Files**
+
+Suppose you modified two files: `index.html` and `style.css`. To stage only `index.html`, use:
+```bash
+git add index.html
+```
+- **Explanation**: This stages only the `index.html` file while leaving `style.css` unstaged.
+
+---
+
+#### **2. Stage All Modified Files**
+
+To stage **all modified files** in the current directory and its subdirectories, use:
+```bash
+git add .
+```
+- **Explanation**: This stages all changes (including modified and newly created files) in the directory, but **does not stage deleted files**.
+
+---
+
+#### **3. Unstage a Specific File**
+
+If you accidentally staged `style.css` and want to unstage it, use:
+```bash
+git reset style.css
+```
+- **Explanation**: This removes `style.css` from the staging area but keeps your local changes in the working directory.
+
+---
+
+#### **4. Commit Staged Changes**
+
+After staging `index.html`, you can commit the changes with a message:
+```bash
+git commit -m "Update index.html layout"
+```
+- **Explanation**: This commits only the staged file (`index.html`).
+
+---
+
+#### **5. Discard Unstaged Changes**
+
+If you’ve made unwanted changes to `style.css` and want to revert it to the last committed version, use:
+```bash
+git checkout -- style.css
+```
+- **Explanation**: This restores `style.css` to its last committed state, discarding any local modifications.
+
+---
+
+#### **6. Stage Changes Using `git add -u` and `git add -A`**
+
+- **`git add -u`**: Stages **only tracked files** (modified and deleted), but **does not include new files**.
+
+   **Example:**
+   ```bash
+   git add -u
+   ```
+   - If you have modified `index.html`, deleted `style.css`, and created a new file `newfile.js`, this will:
+     - Stage the changes to `index.html` (modified)
+     - Stage the deletion of `style.css`
+     - **NOT** stage `newfile.js` because it's an untracked file.
+
+- **`git add -A`**: Stages **all changes**, including modifications, deletions, and **new files**.
+
+   **Example:**
+   ```bash
+   git add -A
+   ```
+   - This will:
+     - Stage the changes to `index.html`
+     - Stage the deletion of `style.css`
+     - **Stage `newfile.js`**, even though it's new and untracked.
+
+---
+
+#### **7. Verify Staging**
+
+After staging, use `git status` to verify what has been staged and what remains untracked or modified:
+```bash
+git status
+```
+- **Explanation**: This will show you which files are staged for commit, which are modified but unstaged, and which are untracked.
+
+---
+
+### **Practical Example**
+
+Let’s simulate the following steps:
+1. Modify `app.js` and `config.json`.
+2. Stage and unstage changes:
+   ```bash
+   git add app.js
+   git reset app.js
+   ```
+3. Commit only `config.json`:
+   ```bash
+   git add config.json
+   git commit -m "Update configuration settings"
+   ```
+4. Discard changes in `app.js`:
+   ```bash
+   git checkout -- app.js
+   ```
+
+---
+
+### **Summary of `git add -u` vs `git add -A`:**
+
+| Command            | Stages                                      |
+|--------------------|---------------------------------------------|
+| `git add -u`        | Stages modified and deleted **tracked** files only. |
+| `git add -A`        | Stages **all** changes: modified, new (untracked), and deleted files. |
+
 ---
 
 ## **3. Branch Management**
