@@ -284,10 +284,6 @@ If you accidentally added files to the staging area using `git add`, you can uns
 
 ### **Scenario 5: Managing Staged and Unstaged Changes**
 
-In this scenario, you will manage staged and unstaged changes, including how to stage specific files, unstage changes, commit files, and discard unwanted changes. Additionally, you’ll learn the difference between `git add -u` and `git add -A`.
-
----
-
 #### **1. Stage Specific Files**
 
 Suppose you modified two files: `index.html` and `style.css`. To stage only `index.html`, use:
