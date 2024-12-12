@@ -213,6 +213,44 @@ Here are some basic commands for navigating and managing directories in the comm
 
 ---
 
+### **Scenario 3: Undo an Accidental `git init`**
+
+If you mistakenly ran `git init` in the wrong directory on a Windows system, follow these steps to remove it:
+
+1. **Navigate to the Directory**  
+   Open Command Prompt or PowerShell and navigate to the directory where you accidentally initialized Git:  
+   ```cmd
+   cd C:\path\to\wrong-directory
+   ```
+
+2. **Delete the `.git` Folder**  
+   The `.git` folder is hidden by default. Use one of the following commands to remove it:
+
+   - **Command Prompt**:  
+     ```cmd
+     rmdir /s /q .git
+     ```
+     - `/s`: Removes all files and subdirectories in the `.git` folder.  
+     - `/q`: Quiet mode, suppresses confirmation prompts.
+
+   - **PowerShell**:  
+     ```powershell
+     Remove-Item -Recurse -Force .git
+     ```
+     - `-Recurse`: Ensures all contents in `.git` are removed.  
+     - `-Force`: Bypasses confirmation prompts.
+
+3. **Verify the Folder is Removed**  
+   List the contents of the directory to ensure the `.git` folder is no longer present:  
+   ```cmd
+   dir /a
+   ```
+   If `.git` does not appear, the repository has been removed.
+
+---
+
+Now, the directory is no longer a Git repository, and you can initialize Git in the correct location if needed.
+
 ## **3. Branch Management**
 
 ### **Scenario 1: Create and Use Branches**
