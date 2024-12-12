@@ -201,8 +201,6 @@ Here are some basic commands for navigating and managing directories in the comm
 
 ---
 
-This approach keeps the numbering, indentation, and explanations consistent, while including `git status` where it adds the most value.
-
 ### **Scenario 2: Clone an Existing Repository**
 
 1. **Clone the Repository**
