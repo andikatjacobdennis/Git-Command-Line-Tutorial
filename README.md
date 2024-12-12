@@ -161,6 +161,10 @@ Here are some basic commands for navigating and managing directories in the comm
 
 ## **2. Creating and Managing Repositories**
 
+Here’s the revised guide with consistent numbering, indentation, and a practical use of `git status` without overusing it:
+
+---
+
 ### **Scenario 1: Create a New Repository**
 
 1. **Initialize a Local Repository**
@@ -170,15 +174,18 @@ Here are some basic commands for navigating and managing directories in the comm
    git init
    ```
    - `mkdir team-project`: Creates a new directory named `team-project`.
+   - `cd team-project`: Navigates into the new directory.
    - `git init`: Initializes a Git repository in the directory.
 
 2. **Add Files and Make the First Commit**
    ```bash
    echo "# Team Project" > README.md
+   git status
    git add README.md
    git commit -m "Initial commit with README"
    ```
    - `echo "# Team Project" > README.md`: Creates a `README.md` file with the text "# Team Project".
+   - `git status`: Confirms the file is untracked before adding it.
    - `git add README.md`: Stages the file for the commit.
    - `git commit -m "Initial commit with README"`: Commits the staged file with a message.
 
@@ -197,6 +204,8 @@ Here are some basic commands for navigating and managing directories in the comm
    - `git push -u origin main`: Pushes the branch to the remote and sets it as the upstream branch.
 
 ---
+
+This approach keeps the numbering, indentation, and explanations consistent, while including `git status` where it adds the most value.
 
 ### **Scenario 2: Clone an Existing Repository**
 
