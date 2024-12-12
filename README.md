@@ -161,10 +161,6 @@ Here are some basic commands for navigating and managing directories in the comm
 
 ## **2. Creating and Managing Repositories**
 
-Here’s the revised guide with consistent numbering, indentation, and a practical use of `git status` without overusing it:
-
----
-
 ### **Scenario 1: Create a New Repository**
 
 1. **Initialize a Local Repository**
