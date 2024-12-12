@@ -249,6 +249,41 @@ If you mistakenly ran `git init` in the wrong directory on a Windows system, fol
 
 ---
 
+### **Scenario 4: Unstage Changes**
+
+If you accidentally added files to the staging area using `git add`, you can unstage them without removing your local changes:
+
+1. **Check the Status of Staged Changes**
+   ```bash
+   git status
+   ```
+   - Lists the files in the staging area (in green) and any untracked or modified files (in red).
+
+2. **Unstage a Single File**
+   ```bash
+   git reset <file-name>
+   ```
+   - Removes the file from the staging area while keeping the changes in your working directory.
+
+   **Example:**
+   ```bash
+   git reset README.md
+   ```
+
+3. **Unstage All Files**
+   ```bash
+   git reset
+   ```
+   - Removes all files from the staging area, keeping the changes in your working directory.
+
+4. **Verify Changes are Unstaged**
+   ```bash
+   git status
+   ```
+   - Confirms the files are no longer in the staging area but still show as modified or untracked.
+
+---
+
 ## **3. Branch Management**
 
 ### **Scenario 1: Create and Use Branches**
