@@ -315,6 +315,34 @@ This approach keeps the numbering, indentation, and explanations consistent, whi
 
 ---
 
+### **Scenario 4: Reset Local Branch to Match Remote**
+
+When the local branch and remote branch have diverged, and you want to align your branch with the `master` branch by discarding local changes:
+
+1. **Fetch the Latest Changes**
+   ```bash
+   git fetch origin
+   ```
+   - `git fetch origin`: Retrieves the latest updates from the remote repository, including changes to the `master` branch.
+
+2. **Checkout the Feature Branch**
+   ```bash
+   git checkout feature-branch-name
+   ```
+   - `git checkout feature-branch-name`: Switches to the feature branch you want to reset.
+
+3. **Reset the Branch to Match `master`**
+   ```bash
+   git reset --hard origin/master
+   ```
+   - `git reset --hard origin/master`: Resets the feature branch to exactly match the `master` branch, discarding all local changes and commits.
+
+4. **Push the Reset Branch**
+   ```bash
+   git push --force
+   ```
+   - `git push --force`: Updates the remote branch with the reset changes, overwriting the remote branch history.
+
 ## **4. Viewing and Modifying History**
 
 ### **Scenario 1: View Commit History**
