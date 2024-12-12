@@ -249,8 +249,6 @@ If you mistakenly ran `git init` in the wrong directory on a Windows system, fol
 
 ---
 
-Now, the directory is no longer a Git repository, and you can initialize Git in the correct location if needed.
-
 ## **3. Branch Management**
 
 ### **Scenario 1: Create and Use Branches**
