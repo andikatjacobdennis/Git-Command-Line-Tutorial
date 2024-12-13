@@ -854,8 +854,6 @@ Let’s say your repository is **`john-doe/my-project`**, and you:
 - Want to delete it from GitHub → Use **Scenario 1** or **Scenario 4**.
 - Want to keep it but unlink it from GitHub → Use **Scenario 3**.
 
-Here are additional topics and scenarios that can be covered to make your Git tutorial more comprehensive and versatile:  
-
 ---
 
 ### **9. Collaboration with Others**  
