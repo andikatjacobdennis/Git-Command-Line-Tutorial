@@ -619,7 +619,6 @@ git log --oneline --graph --decorate --all
      git add <file-name>
      git merge --continue
      ```
-
 ---
 
 ## **7. Stashing Work**
@@ -641,6 +640,100 @@ git log --oneline --graph --decorate --all
    ```bash
    git stash drop stash@{0}
    ```
+   - Deletes the specified stash from the stash list.
+
+---
+
+### **Scenario 2: Save Changes with a Message**
+1. **Stash Changes with a Description**
+   ```bash
+   git stash push -m "Description of stash"
+   ```
+   - Saves changes with a descriptive message for easier identification.
+
+---
+
+### **Scenario 3: Stash Only Specific Files**
+1. **Stash Specific Files**
+   ```bash
+   git stash push -m "Description" path/to/file
+   ```
+   - Stashes only the specified files.
+
+---
+
+### **Scenario 4: Stash Untracked Files**
+1. **Include Untracked Files**
+   ```bash
+   git stash push -u
+   ```
+   - Stashes both tracked and untracked files.
+
+2. **Include All Files**
+   ```bash
+   git stash push -a
+   ```
+   - Stashes all files, including ignored ones.
+
+---
+
+### **Scenario 5: View and Manage Stashes**
+1. **List Stashes**
+   ```bash
+   git stash list
+   ```
+   - Displays all stashes with their index and description.
+
+2. **Show Stash Details**
+   ```bash
+   git stash show stash@{0}
+   ```
+   - Displays changes saved in the specified stash.
+
+3. **View Detailed Stash Changes**
+   ```bash
+   git stash show -p stash@{0}
+   ```
+   - Shows detailed differences stored in the stash.
+
+---
+
+### **Scenario 6: Apply and Clear Stash Simultaneously**
+1. **Pop a Stash**
+   ```bash
+   git stash pop stash@{0}
+   ```
+   - Applies the specified stash and removes it from the stash list.
+
+---
+
+### **Scenario 7: Stash for a Specific Branch**
+1. **Create a Stash for a Branch**
+   ```bash
+   git stash push -m "stash for branch-name"
+   ```
+   - Helps to identify the stash as related to a specific branch.
+
+2. **Apply a Stash from Another Branch**
+   ```bash
+   git stash apply stash@{n}
+   ```
+   - Applies a stash created in another branch.
+
+---
+
+### **Scenario 8: Clear All Stashes**
+1. **Clear Entire Stash List**
+   ```bash
+   git stash clear
+   ```
+   - Deletes all stashes.
+
+2. **Remove Stashes up to a Specific Index**
+   ```bash
+   git stash drop stash@{n}
+   ```
+   - Removes stashes individually.
 
 ---
 
