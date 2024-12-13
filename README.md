@@ -177,13 +177,34 @@ Here are some basic commands for navigating and managing directories in the comm
    ```bash
    echo "# Team Project" > README.md
    git status
-   git add README.md
+   git add README.md scripts/folder/script.js
    git commit -m "Initial commit with README"
    ```
-   - `echo "# Team Project" > README.md`: Creates a `README.md` file with the text "# Team Project".
-   - `git status`: Confirms the file is untracked before adding it.
-   - `git add README.md`: Stages the file for the commit.
-   - `git commit -m "Initial commit with README"`: Commits the staged file with a message.
+
+   - **Create a `README.md` file:**  
+     ```bash
+     echo "# Team Project" > README.md
+     ```  
+     - Creates a `README.md` file in the current directory with the text `# Team Project`.  
+   
+   - **Check the status of your repository:**  
+     ```bash
+     git status
+     ```  
+     - Displays the current status of your repository, including untracked or modified files.  
+   
+   - **Stage files for commit:**  
+     ```bash
+     git add README.md scripts/folder/script.js
+     ```  
+     - Stages `README.md` and `scripts/folder/script.js` for the next commit.  
+     - This prepares the files so they’ll be included in the commit.  
+   
+   - **Make the first commit:**  
+     ```bash
+     git commit -m "Initial commit with README"
+     ```  
+     - Creates a commit with the staged files and attaches the message `"Initial commit with README"`.  
 
 3. **Connect to a Remote Repository**
    ```bash
@@ -198,8 +219,6 @@ Here are some basic commands for navigating and managing directories in the comm
    ```
    - `git branch -M main`: Renames the current branch to `main`.
    - `git push -u origin main`: Pushes the branch to the remote and sets it as the upstream branch.
-
----
 
 ### **Scenario 2: Clone an Existing Repository**
 
