@@ -581,6 +581,53 @@ Let’s simulate the following steps:
 
 ---
 
+To rebase a branch onto `master`, follow these steps:
+
+1. **Switch to your branch** (the one you want to rebase):
+   ```sh
+   git checkout your-branch
+   ```
+
+2. **Fetch the latest changes** from the remote:
+   ```sh
+   git fetch origin
+   ```
+
+3. **Ensure your `master` branch is up-to-date**:
+   ```sh
+   git checkout master
+   git pull origin master
+   ```
+
+4. **Switch back to your branch and start the rebase**:
+   ```sh
+   git checkout your-branch
+   git rebase master
+   ```
+
+5. **Resolve any conflicts** if prompted. Use:
+   ```sh
+   git status
+   ```
+   to check which files have conflicts, manually fix them, then add the resolved files:
+   ```sh
+   git add <file>
+   ```
+   Once all conflicts are resolved, continue the rebase:
+   ```sh
+   git rebase --continue
+   ```
+
+6. **If necessary, restart the rebase** (if something goes wrong):
+   ```sh
+   git rebase --abort
+   ```
+
+7. **Force push your rebased branch** (if it's already pushed to remote):
+   ```sh
+   git push origin your-branch --force
+   ```
+
 ### **Scenario 5: Reset Local Branch to Match Remote**
 
 When the local branch and remote branch have diverged, and you want to align your branch with the `master` branch by discarding local changes:
