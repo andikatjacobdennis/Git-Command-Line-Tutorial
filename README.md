@@ -628,6 +628,41 @@ To rebase a branch onto `master`, follow these steps:
    git push origin your-branch --force
    ```
 
+---
+
+To combine the last two commits into a single commit using Git, follow these steps:
+
+### 1. Start an interactive rebase for the last two commits:
+```sh
+git rebase -i HEAD~2
+```
+
+### 2. Modify the rebase instruction:
+- You will see a list of the last two commits like this:
+  ```
+  pick <commit-hash-1> Commit message 1
+  pick <commit-hash-2> Commit message 2
+  ```
+- Change `pick` on the second commit to `squash` (or `s`):
+  ```
+  pick <commit-hash-1> Commit message 1
+  squash <commit-hash-2> Commit message 2
+  ```
+
+### 3. Edit the commit message:
+- Git will open an editor where you can modify the combined commit message.
+- Keep or rewrite the message, then save and exit.
+
+### 4. Complete the rebase:
+- If there are no conflicts, Git will finish rebasing.
+
+### 5. Force push if the commits were already pushed to a remote branch:
+```sh
+git push origin your-branch --force
+```
+
+---
+
 ### **Scenario 5: Reset Local Branch to Match Remote**
 
 When the local branch and remote branch have diverged, and you want to align your branch with the `master` branch by discarding local changes:
